@@ -20,7 +20,7 @@ body{
 .instagram-wrapper{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: start;   
     width: 60%;
     height: 100vh;
 }
@@ -39,7 +39,7 @@ body{
 .instagram-continue{
     display: flex;
     align-items: auto; /* horizontal */
-    justify-content: space-between; /* vertical */
+    justify-content: space-around; /* vertical */
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
@@ -73,7 +73,7 @@ body{
 }
 
 .profile-photo img{
-    height: 6rem;
+    height: 7rem;
 }
 
 .instagram-login{
@@ -117,6 +117,8 @@ body{
     height: 3rem;
     width: 10rem;
     background-size: cover;
+    margin-left: 3px;
+    border-radius: 5px;
 }
 
 .app-download:nth-child(1){
@@ -125,4 +127,38 @@ body{
 
 .app-download:nth-child(2){
     background-image: url('./play-store-download.jpg');
+}
+
+/* media queries*/
+
+@media(max-width: 1035px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-continue{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
+
+    .instagram-login{
+        text-align: center;
+    }
 }
